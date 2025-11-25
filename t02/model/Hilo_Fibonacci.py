@@ -1,4 +1,5 @@
 from utils.util_simples import calcular_fibonacci
+from utils.util_menus import mostrar_encabezado
 import threading
 
 class Hilo_Fibonacci(threading.Thread):
@@ -8,5 +9,6 @@ class Hilo_Fibonacci(threading.Thread):
         self.resultado = None
 
     def run(self):
+        mostrar_encabezado(f"Cálculo del fibonacci de: {self.n}")
         self.resultado = calcular_fibonacci(self.n)
         print(f"Fibonacci de {self.n} = {self.resultado}")

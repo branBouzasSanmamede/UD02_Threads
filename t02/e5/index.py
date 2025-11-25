@@ -8,7 +8,7 @@ def main():
     hilo_fibonacci = Hilo_Fibonacci(pedir_numero_positivo("Introduce el número para calcular Fibonacci: "))
 
     hilo_factorial.start()
-    hilo_fibonacci.start()
-
     hilo_factorial.join()
+
+    hilo_fibonacci.start()
     hilo_fibonacci.join()
