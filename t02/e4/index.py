@@ -18,4 +18,4 @@ def main():
         hilo.join()
 
     t1 = time.time()
-    print(f"Tiempo total de ejecución: {t1 - t0:.2f} segundos")
+    print(f"Tiempo total de ejecución: {t1 - t0:.5f} segundos")

@@ -10,4 +10,4 @@ def main():
     hilo.join()
 
     fin = time.time()
-    print(f"\nTiempo total de ejecución: {fin - inicio:.2f} segundos")
+    print(f"\nTiempo total de ejecución: {fin - inicio:.5f} segundos")
